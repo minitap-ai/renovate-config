@@ -6,19 +6,21 @@
     "group:recommended",
     ":automergeMinor",
     ":automergeDigest",
-    ":automergeBranch"
+    ":automergePr"
   ],
   "prConcurrentLimit": 5,
   "minimumReleaseAge": "14 days",
+  "platformAutomerge": true,
   "schedule": [
     "before 12pm on tuesday",
     "before 12pm on wednesday",
     "before 12pm on thursday"
   ],
   "vulnerabilityAlerts": {
-    "prPriority": 10,
     "schedule": [],
     "minimumReleaseAge": null,
+    "prConcurrentLimit": 0,
+    "branchConcurrentLimit": 0,
     "labels": ["security"]
   },
   "packageRules": [
